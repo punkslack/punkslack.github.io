@@ -24,7 +24,7 @@ async function createLogin() {
           const form = new URLSearchParams()
           form.append('username', this.username)
           form.append('password', this.password)
-          let res = await fetch(`https://dev.fastbfp.ca:8443/login`, {
+          let res = await fetch(`/login`, {
             method: 'post',
             body: form,
             mode: 'cors',
